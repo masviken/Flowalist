@@ -7,8 +7,4 @@ The basic concept is similar to my sideproject @BDGTme, an app for keeping track
 
 This app will be developed live at <a href="http://flowalist.com">flowalist.com</a>.
 
-<<<<<<< HEAD
 ** Please note that the app in this first version only will store data in localStorage. **
-=======
-Please note that the app in this first version only will store data in localStorage.
->>>>>>> Updated repo description
