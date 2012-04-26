@@ -1,4 +1,4 @@
-MiniBdgtMe
+Flowalist
 ==========
 
 Just playing around to learn JavaScript.
