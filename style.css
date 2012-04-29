@@ -1,3 +1,9 @@
+body {}
+
+h1 logo {
+	background-image: url(#);
+}
+
 @font-face {
     font-family: 'LeagueGothicRegular';
     src: url('League_Gothic-webfont.eot');
@@ -9,3 +15,16 @@
     font-style: normal;
 
 }
+
+h2 {
+	font-family: "LeagueGothicRegular", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+

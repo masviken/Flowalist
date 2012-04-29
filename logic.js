@@ -1,51 +1,23 @@
-// Do a couple of console.logs
-console.log("Hello from myscript.js");
-console.log("Hello again!"); // This is not needed
+var payday = new Date();
+payday.setFullYear(2012,4,25);
+var today = new Date();
+var msLeft = payday - today;
+var oneDay = 1000 * 60 * 60 * 24;
+var daysLeft = msLeft / oneDay;
+var weeksLeft = daysLeft / 7;
 
-/*
-var name  = prompt("What is your name?");
-alert("Hello " + name);
+var balance = 4200;
+var dayBudget = Math.round(balance / daysLeft);
 
-name = "Nick";
-console.log("The users's name is " + name);
-*/
+function transaction () {
+	var amount = prompt("How much did you spend?");
+	var sum = (balance - amount);
+	document.write("You have " + Math.round((balance - amount) / daysLeft) + " kr left to spend today.");
+};
 
+var budget = {
+	day: Math.round((balance - transaction) / daysLeft) + " kr",
+	week: Math.round((balance - transaction) / weeksLeft) + " kr",
+	month: balance + " kr"
+};
 
-/*console.log("Before");
-
-var name = prompt("What is your name");
-
-if ("Tomas") {
-	console.log("If block");
-} else {
-	console.log("Else block");
-}
-
-console.log("After");*/
-
-/*
-var counter = 10;
-
-while (counter) {
-	console.log("Hello world");
-	console.log("Hi");
-	counter = counter - 1;
-}
-
-while (prompt("What is your name?")) {
-	console.log ("Got your name")
-}
-
-console.log("Before")
-
-for (var counter=10; counter; counter = counter -1) {
-	console.log("Hello world", counter)
-}
-
-console.log("After");
-*/
-
-var friends = ["Nick", "Michael", "Amit", "Tomas";
-console.log(friends);
-console.log(friends.length);
-console.log(friends[1]);
